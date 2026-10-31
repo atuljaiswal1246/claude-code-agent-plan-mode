@@ -34,4 +34,4 @@ Works for Claude Code and OpenCode — drop it wherever your agent reads skills 
 
 MIT
 
-Published at: https://github.com/atuljaiswal1246/nojump
+Published at: https://github.com/atuljaiswal1246/claude-code-agent-plan-mode
