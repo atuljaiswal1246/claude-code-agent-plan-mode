@@ -1,39 +1,37 @@
-# plan-first
+# nojump
 
-OpenCode / Claude Code skill that stops an AI agent from jumping straight into work without a plan.
+Stop an AI agent from jumping straight into work without a plan.
 
 ## The problem
 
-Agents are quick to start editing files, running commands, and making changes the moment a task arrives — with no plan, no checkpoint, and no chance for you to say "wait, that's not what I meant."
+Agents start editing files, running commands, and making changes the moment a task lands — no plan, no checkpoint, no chance for you to say "wait."
 
 ## The rule
 
-**Never execute work without a written plan that you have explicitly approved.**
+**Never execute without a written plan you've explicitly approved.**
 
-When given a task, the agent must:
+The agent must:
 1. Write a numbered plan (what to do, which files, how to verify).
-2. Stop and wait for your approval.
-3. Only after you say "go" / "approve" / "proceed", execute one step at a time.
+2. Stop and wait for your "go" / "approve" / "proceed."
+3. Execute one step at a time, only after approval.
 4. Verify after each step before moving on.
 
 ## Install
 
-```bash
-# Clone or copy this folder into your skills directory:
-mkdir -p ~/.config/opencode/skills
-cp -r plan-first ~/.config/opencode/skills/plan-first
-```
-
-Then load it in your session:
+Drop the `plan-first/` folder into your skills directory, then load it:
 
 ```
 /skill plan-first
 ```
 
+Works for Claude Code and OpenCode — drop it wherever your agent reads skills from (`AGENTS.md`, `CLAUDE.md`, or `~/.config/opencode/skills`).
+
 ## Files
 
-- `SKILL.md` — the skill itself (frontmatter + protocol).
+- `SKILL.md` — the skill.
 
 ## License
 
 MIT
+
+Published at: https://github.com/atuljaiswal1246/nojump
